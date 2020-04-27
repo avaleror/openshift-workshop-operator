@@ -27,7 +27,7 @@ spec:
         clusterServiceVersion: crwoperator.v2.1.1
       openshiftOAuth: true
     etherpad:
-      enabled: flase
+      enabled: false
     gogs:
       enabled: true
       image:
@@ -36,7 +36,7 @@ spec:
     nexus:
       enabled: true
     pipeline:
-      enabled: flase
+      enabled: false
       operatorHub:
         channel: dev-preview
         clusterServiceVersion: openshift-pipelines-operator.v0.10.7
@@ -63,4 +63,4 @@ spec:
         name: "hashicorp/vault-k8s"
         tag: "0.3.0"
     workshopper:
-      enabled: flase
+      enabled: false
