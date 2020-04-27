@@ -11,7 +11,7 @@ spec:
     gitBranch: "3.2"
   infrastructure:
     argocd:
-      enabled: true
+      enabled: false
       operatorHub:
         channel: alpha
         clusterServiceVersion: argocd-operator.v0.0.4
@@ -27,7 +27,7 @@ spec:
         clusterServiceVersion: crwoperator.v2.1.1
       openshiftOAuth: false
     etherpad:
-      enabled: true
+      enabled: flase
     gogs:
       enabled: true
       image:
@@ -36,7 +36,7 @@ spec:
     nexus:
       enabled: true
     pipeline:
-      enabled: true
+      enabled: flase
       operatorHub:
         channel: dev-preview
         clusterServiceVersion: openshift-pipelines-operator.v0.10.7
@@ -45,7 +45,7 @@ spec:
       devName: dev-project
       stagingName: staging-project
     serviceMesh:
-      enabled: true
+      enabled: false
       operatorHub:
         channel: "1.0"
         clusterServiceVersion: servicemeshoperator.v1.0.10
@@ -63,4 +63,4 @@ spec:
         name: "hashicorp/vault-k8s"
         tag: "0.3.0"
     workshopper:
-      enabled: true
+      enabled: flase
